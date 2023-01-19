@@ -3,8 +3,10 @@ package objects;
 public class HomeAreaCalculatorWithMethods {
     public static void main(String[] args){
 
-        Rectangle kitchen = new Rectangle(length:200, width:400);
-        Rectangle bathroom = new Rectangle(length:300, width:700);
+        Rectangle kitchen = new Rectangle( 200, 400);
+        Rectangle bathroom = new Rectangle(300, 700);
+        double area = calculateTotalArea(kitchen, bathroom);
+        System.out.println("The total area is: " + area);
 
     }
 
