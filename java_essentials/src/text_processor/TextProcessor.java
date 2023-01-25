@@ -4,6 +4,7 @@ public class TextProcessor {
 
     public static void main(String[] args){
         countWords("I love Java");
+        reverseString("stop");
 
     }
 
@@ -15,7 +16,13 @@ public class TextProcessor {
         for(int i=0; i<numberOfWords; i++){
             System.out.println(words[i]);
         }
+    }
 
+
+    public static void reverseString(String text){
+        for(int i = text.length()-1;i>=0;i--){
+            System.out.print(text.charAt(i));
+        }
     }
 
 
